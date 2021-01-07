@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Portfolio.MainPage">
+    <StackLayout BackgroundColor="LightCyan">
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0"/>
+        <Image Source="PortfolioBillede.jpg"
+               HeightRequest="200"/>
+        <Label Text="Marcus Jannich Nielsen"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="CenterAndExpand" />
+        <Label Text="Datatekniker med speciale i programmering"
+                FontSize="18"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Black"/>
+        <Button  VerticalOptions="Start"
+                 Text="Uddannelse"
+                 Clicked="Button_Clicked"
+                 Margin="100,20,100,0"
+                 BackgroundColor="#2196F3"
+                 CornerRadius="4"/>
+        <Button  VerticalOptions="Start"
+                 Text="Erfaring / Specialer"
+                 Clicked="Button_Clicked_Erfaring"
+                 Margin="100,20,100,0"
+                 BackgroundColor="#2196F3"
+                 CornerRadius="4"/>
+        <Button  VerticalOptions="End"
+                 Text="Eksempler på tidligere projekter"
+                 Clicked="Button_Clicked1"
+                 Margin="100,10,100,0"
+                 BackgroundColor="#2196F3"
+                 CornerRadius="4"/>
+        <Button Text="Mobil nr. : 29 42 79 65"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Start"
+                HeightRequest="30"
+                TextColor="Black"
+                BackgroundColor="LightCyan"
+                Margin="10,5,10,0"
+                Padding="0,0,0,10"
+                FontSize="13"
+                Clicked="Dial"/>
+        <Button Text="Email: nielsenmarcus24@gmail.com"
+                TextColor="Black"
+                HeightRequest="30"
+                BackgroundColor="LightCyan"
+                VerticalOptions="End"
+                HorizontalOptions="Start"
+                Margin="10,0,10,0"
+                Padding="0,0,0,10"
+                Clicked="Submit"
+                FontSize="13"/>
+    </StackLayout>
+
+</ContentPage>
